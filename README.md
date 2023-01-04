@@ -18,16 +18,16 @@
 * [References](#references)
 * [Challenges and Future Work](#challenges-and-futurework)
 
-## Problem Statement
+## PROBLEM STATEMENT
 
 Are you wondering how people are feeling about your brand on Twitter? By monitoring the sentiment of tweets in real time, you can gain insights into what people think and feel about your brand, product, or service through __different tweets__ and __comments__. This guarantees that the companies understand the behavior of the customers and make changes based on the __sentiment__ and therefore bring __benefits__ to the companies. 
 
-## Objectives
+## OBJECTIVES
 <li> To extract information from tweets (between October and December, 2022) related to Luxworld, travel-to-earn, move-to-earn and see it is either positive or negative, or neutral. </li> 
 <li> To explore conversations and topics that occur most in the collected tweets. </li> 
 <li> To visualize the trends in sentiments of Twitter users. </li> 
 
-## Tools
+## TOOLS
 
 <table style="width:100%">
   <tr>
@@ -75,7 +75,7 @@ Are you wondering how people are feeling about your brand on Twitter? By monitor
 <li>Timeframe: October 1, 2022 to September 26, 2022</li>
 <li>Number of tweets collected = 14.829 tweets</li>
 
-## DATA-PREPROCESSING
+## DATA PREPROCESSING
 
 <b> Data Cleaning </b> 
 
@@ -88,15 +88,34 @@ Are you wondering how people are feeling about your brand on Twitter? By monitor
 
 Sentiment analysis is a supervised machine learning problem with different types of analysis. We considered a fine-grained sentiment classification with three levels of sentiments - positive, neutral, negative. We used TextBlob -  a simple library which supports complex analysis and operations on textual data. TextBlob returns polarity and subjectivity of a sentence. Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment. Negation words reverse the polarity. TextBlob has semantic labels that help with fine-grained analysis. 
 
-## DATA-VISUALIZATION 
+## DATA VISUALIZATION 
+<h4> Distribution of Sentiments </h4>
+<img src="https://github.com/emmanguyen0602/LuxWorld-Twitter-Sentiment-Analysis/blob/main/Images/countplot%20sensitive.png" style="width:1000px;height:500px;"> 
+<hr>
 
+<h4> Wordcloud Visualization </h4>
+<img src="https://github.com/emmanguyen0602/LuxWorld-Twitter-Sentiment-Analysis/blob/main/Images/Screenshot_4.png" style="width:1000px;height:500px;"> 
+<hr>
+<img src="https://github.com/emmanguyen0602/LuxWorld-Twitter-Sentiment-Analysis/blob/main/Images/trend%20wordcloud.png" style="width:1000px;height:500px;"> 
+<hr>
 
+<h4> Countplot Most Occurring Words </h4>
+<img src="https://github.com/emmanguyen0602/LuxWorld-Twitter-Sentiment-Analysis/blob/main/Images/top%20occuring%20words.png" style="width:1000px;height:500px;"> 
+<hr> 
+<img src="https://github.com/emmanguyen0602/LuxWorld-Twitter-Sentiment-Analysis/blob/main/Images/top%20occuring%20words%20neg.png" style="width:1000px;height:500px;"> 
+<hr> 
+
+<h4> Trendline of Tweets Over Time </h4>
+<img src="https://github.com/emmanguyen0602/LuxWorld-Twitter-Sentiment-Analysis/blob/main/Images/trendline.png" style="width:1000px;height:500px;"> 
+<hr>
 
 ## RESULTS 
 
-* After performing __exploratory data analysis__, it could be seen based on the results that there is a comparatively more number of neutral sentences compared to either positive or negative sentiments. 
-* With the use of __word clouds__, it could be seen that words such as ............... were used most frequently.
-* On the contrary, it could be seen for the negative __word cloud__ that words such as ................ used most frequently. 
+* After performing __exploratory data analysis__, it could be seen that there is a comparatively more number of positive and neutral tweets compared to negative sentiments. 
+* With the use of __word clouds__, it could be seen that positive words such as airdrop, presale, luck, d2e, m2e were used most frequently in LuxWorld tweets whereas some of the words used in negative tweets are game, token, time, amp, market etc.
+* And for T2E and M2e bar graphs and WordClouds, besides words move to earn and crypto, NFT, app, web3, rewards, utilities etc are positive words and game, StepN, earn etc are negative words.
+* October had the lowest number of tweets as compared to November and October about Luxworld's tweets. Especially, the number of positive tweets got peak on around 27-* 29/11 - the presale started and 11-13/10. The tweets in December was quite stable though not too high.
+
 
 ## CONCLUSION 
 This study focused on analysing for positive and negative sentiments from Twitter tweets about LuxWorld, Travel to earn and Move to earn and distribution of tweet over time. 
@@ -109,11 +128,10 @@ https://github.com/emmanguyen0602/Sentiment_Analysis
 
 
 
-## CHALLENGES-AND-FUTUREWORK 
-<b> Challenges </b>: Identifying package for tweet scraping and recognizing limitations on extraction, large execution times and runtime errors due to memory limitation for parts of data modeling </li>
+## CHALLENGES AND FUTUREWORK 
+<b> Challenges </b>:Tweet scraping cost large time.
 <h4> Future Work </h4>
-<li> Low impact insights from VADER Sentiment Analysis opens up a scope for deep dive into topics independently like People For/Against vaccines </li>
-<li> Explore conversations and sentiments in organizational tweets </li>
-<li> Number of active COVID cases, recoveries and deaths for the three months </li> 
+<li> Extract tweets from organization and indivisual </li>
+<li> Explore the hidden topic using Unsupervided LDA </li>
 
 
