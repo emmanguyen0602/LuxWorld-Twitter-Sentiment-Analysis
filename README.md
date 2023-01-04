@@ -84,5 +84,36 @@ Are you wondering how people are feeling about your brand on Twitter? By monitor
 <li> Lemmatization of Tweets using nltk.WordNetLemmatizer() </li> <br> 
 
 ## Data Modeling
+<h4> Sentiment Analysis </h4>
+
+Sentiment analysis is a supervised machine learning problem with different types of analysis. We considered a fine-grained sentiment classification with three levels of sentiments - positive, neutral, negative. We used TextBlob -  a simple library which supports complex analysis and operations on textual data. TextBlob returns polarity and subjectivity of a sentence. Polarity lies between [-1,1], -1 defines a negative sentiment and 1 defines a positive sentiment. Negation words reverse the polarity. TextBlob has semantic labels that help with fine-grained analysis. 
+
+## DATA-VISUALIZATION 
+
+
+
+## RESULTS 
+
+* After performing __exploratory data analysis__, it could be seen based on the results that there is a comparatively more number of neutral sentences compared to either positive or negative sentiments. 
+* With the use of __word clouds__, it could be seen that words such as ............... were used most frequently.
+* On the contrary, it could be seen for the negative __word cloud__ that words such as ................ used most frequently. 
+
+## CONCLUSION 
+This study focused on analysing for positive and negative sentiments from Twitter tweets about LuxWorld, Travel to earn and Move to earn and distribution of tweet over time. 
+
+
+## REFERENCES 
+
+https://github.com/rashidesai24/Analyzing-Twitter-Trends-On-COVID-19-Vaccinations
+https://github.com/emmanguyen0602/Sentiment_Analysis
+
+
+
+## CHALLENGES-AND-FUTUREWORK 
+<b> Challenges </b>: Identifying package for tweet scraping and recognizing limitations on extraction, large execution times and runtime errors due to memory limitation for parts of data modeling </li>
+<h4> Future Work </h4>
+<li> Low impact insights from VADER Sentiment Analysis opens up a scope for deep dive into topics independently like People For/Against vaccines </li>
+<li> Explore conversations and sentiments in organizational tweets </li>
+<li> Number of active COVID cases, recoveries and deaths for the three months </li> 
 
 
